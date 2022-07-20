@@ -1,0 +1,43 @@
+#register{
+    width: 70%;
+    height: auto;
+    margin: auto;
+}
+h3{
+    font-size: 30px;
+    font-weight: 100;
+}
+#user-data{
+    width: 35%;
+    margin: auto;
+}
+h5{
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+input{
+    height: 20px;
+    width: 100%;
+}
+h4{
+    text-align: center;
+    text-decoration: underline;
+}
+#btn{
+    background-color: black;
+    color: white;
+    padding: 5px 35px 5px 35px;
+    display: block;
+    margin: auto;
+}
+#ques{
+    font-size: 15px;
+    color: grey;
+    text-align: center;
+}
+#call{
+    font-size: 15px;
+    color: grey;
+    text-align: center;
+}
