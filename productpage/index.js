@@ -231,6 +231,16 @@ let changefi = ()=>{
         })
         append(filterd);
     }
+    else if(selectFi == "Body Spray"){
+        
+        filterd = data.filter( ele=>{
+           if(selectFi === ele.type){
+               return ele
+           }
+           
+       })
+       append(filterd);
+   }
 
   
    
