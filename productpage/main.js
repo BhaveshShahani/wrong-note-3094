@@ -11,21 +11,32 @@ let append = (data)=>{
          let p3 = document.createElement("p");
          let btn = document.createElement("button");
          btn.innerText = "Add To Bag"
+       
+         
          btn.addEventListener("click",()=>{
             addCart(element);
          })
          img.src = element.img;
          h3.innerText = element.new;
+         h3.style.color = "blue";
+         h3.style.fontStyle = "italic"
          h32.innerText = element.name;
+
          p.innerText = element.type;
+         p.style.color= "gray"
+         p.style.fontSize = "90%"
          p2.innerText = element.price;
          p3.innerText = "Mix & Match Full-Size : Buy 3 Get, 1 Free"
+         p3.style.width = "60%"
+         p3.style.margin = "auto"
+         p3.style.color = "red"
+         p3.style.fontSize = "80%"
 
-         div.append(img,h3,h32,p,p2,p3);
-         div.addEventListener("click",()=>{
+         div.append(img,h3,h32,p,p2,p3,btn);
+         img.addEventListener("click",()=>{
             checkout(element);
          })
-         cont.append(div,btn);
+         cont.append(div);
     });
 }
 
