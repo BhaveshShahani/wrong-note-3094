@@ -3,8 +3,8 @@ let form = document.querySelector("form");
 
 let userData = JSON.parse(localStorage.getItem("userData")) || [];
 
-form.addEventListener("submit",function(event){
-    event.preventDefault();
+form.addEventListener("submit",function(e){
+    e.preventDefault();
     let data = {
         firstName: form.firstName.value,
         lastName: form.lastName.value,
@@ -21,7 +21,7 @@ form.addEventListener("submit",function(event){
             userData.push(data);
             console.log(userData);
             localStorage.setItem("userData",JSON.stringify(userData));
-
+            // window.location.href = "login.html"
         }
         else{
             alert("Account Already Exists")
