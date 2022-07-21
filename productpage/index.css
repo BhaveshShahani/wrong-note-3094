@@ -51,7 +51,7 @@
     display: grid;
     grid-template-columns: repeat(4,250px);
  grid-template-rows: repeat( 6,400px);
- row-gap: 50px;
+ row-gap: 100px;
     margin-top: 2%;
 }
 #container>div>img{
@@ -59,6 +59,7 @@
     height: 70%;
     display: block;
     margin: auto;
+  
 }
 #container>div{
     text-align: center;

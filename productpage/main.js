@@ -25,7 +25,8 @@ let append = (data)=>{
          p.innerText = element.type;
          p.style.color= "gray"
          p.style.fontSize = "90%"
-         p2.innerText = element.price;
+         p2.innerText ="$" + "" +element.price;
+     
          p3.innerText = "Mix & Match Full-Size : Buy 3 Get, 1 Free"
          p3.style.width = "60%"
          p3.style.margin = "auto"
