@@ -1,15 +1,19 @@
 
 #sidebar{
-    border: solid black;
-    width: 30%;
+    /* border: solid black; */
+    width: 20%;
 }
 .head{
     text-decoration: none;
     list-style-type: none;
 }
+h3{
+    text-transform: uppercase;
+}
 .content>a{
     display: block;
-    border: solid black;
+    font-size: 18px;
+    /* border: solid black; */
     margin-top: 13px;
     width: 90%;
     text-decoration: none;
