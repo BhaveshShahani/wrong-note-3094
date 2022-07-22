@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foot</title>
+    <link rel="stylesheet" href="foot.css">
+</head>
+<body>
+    <!-- <div id="decoration"></div>
+    <div id="links">
+        <div>
+            <p>Get email offers & the latest news from Bath & Body Works!</p>
+            <p>Enter Email</p>
+            <input type="text" id="email" placeholder="Email">
+            <p>Confirm Email</p>
+            <input type="text" id="reEmail" placeholder="Re-Enter Email">
+            <input type="Submit" id="submit">
+        </div>
+        <div>
+            <h3>Coustmer Care</h3>
+            <p><a href="">Help & FAQs</a></p>
+            <p><a href="">Shipping</a></p>
+            <p><a href="">Returns & Exchanges</a></p>
+            <p><a href="">Order Tracking</a></p>
+            <p><a href="">Corporate Sales & Gifts</a></p>
+            <p><a href="">Contact Us</a></p>
+        </div>
+        <div>
+            <h3>My Account</h3>
+            <p><a href="">Sign In or Sign Up</a></p>
+            <p><a href="">Order Tracking</a></p>
+            <p><a href="">My Auto Refresh</a></p>
+            <p><a href="">My Love-It List</a></p>
+        </div>
+        <div>
+            <h3>Discover</h3>
+            <p><a href="">About Us</a></p>
+            <p><a href="">Careers</a></p>
+            <p><a href="">Gift Cards</a></p>
+            <p><a href="">Shop by Fragrance</a></p>
+            <p><a href="">Product Ingredients</a></p>
+            <p><a href="">Get Inspired</a></p>
+            <p><a href="">Diversity, Equity & Inclusion</a></p>
+        </div>
+        <div>
+            <h3>Find Us</h3>
+            <p><a href="">Store Location</a></p>
+            <p><a href="">Global Locations</a></p>
+        </div>
+    </div>
+    <div id="connect">
+        <div id="social">
+            <h3>Get Connected</h3>
+            <img src="data:image/png;base64,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" alt="Facebook">
+            <img src="https://static.vecteezy.com/system/resources/previews/002/534/045/original/social-media-twitter-logo-blue-isolated-free-vector.jpg" alt="twitter">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" alt="Insta">
+            <img src="https://static.vecteezy.com/system/resources/previews/006/693/634/original/tik-tok-flat-icon-template-black-color-editable-tik-tok-flat-icon-symbol-flat-illustration-for-graphic-and-web-design-free-vector.jpg" alt="tictok">
+            <img src="https://centa.org/wp-content/uploads/2021/03/YouTube-logo.jpg" alt="youtube">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" alt="pintrest">
+        </div>
+        <div id="logo">
+            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw0c8e6af7/images/evergreen/Happiness_Guaranteedtimes2_v2.jpg?yocs=o_s_" alt="logo">
+        </div>
+    </div>
+    <div id="tc">
+        <div id="privacy">
+            <p>Terms Of Use</p>
+            <p>Privacy Policy</p>
+            <p>Security Bug Report</p>
+            <p>California Privacy Rights</p>
+            <p>Do Not Sell My Personal Information (California)</p>
+            <p>Transparency in Supply Chains</p>
+            <p>Ad Preference</p>
+        </div>
+        <div id="rights"><p>&#169; Bath & Body Works Direct, Inc. All Right Reserved</p></div>
+    </div> -->
+</body>
+</html>
