@@ -182,7 +182,22 @@ price:13.50
     name:"Daily Nourishing Body Lotion",
     type:"Butterfly",
     price:17.50
+},
+{
+    img:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw83fd446b/crop/026499652_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+    new:"New",
+    name:"Blueberry Sugar Pancakes",
+    type:"Ultimate Hydration Body Lotion",
+    price:17.50
+},
+{
+    img:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc035fb12/crop/026499656_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+    new:"New",
+    name:"Blueberry Sugar Pancakes",
+    type:"Fine Fragrance Mist",
+    price:16.50
 }
+
 
 ]
 
@@ -200,22 +215,34 @@ let changefi = ()=>{
        else if(selectFi == "Bar Soap"){
             filterd = data.filter( ele=>{
                 if(selectFi === ele.id){
-                    return ele
+                   return ele
                  }
                  
            })
+           append(filterd);
        }
        else if(selectFi == "Body Cream"){
         
          filterd = data.filter( ele=>{
             if(selectFi === ele.id){
-               return ele
+                return ele
             }
             
         })
+        append(filterd);
     }
-    console.log(filterd)
-    append(filterd);
+    else if(selectFi == "Body Spray"){
+        
+        filterd = data.filter( ele=>{
+           if(selectFi === ele.type){
+               return ele
+           }
+           
+       })
+       append(filterd);
+   }
+
+  
    
 
 }
@@ -225,7 +252,7 @@ let sefrag = ()=>{
     let filterd;
     if(selectFrag == "Fragrance"){
         append(data);
-
+     console.log(data)
     }
     else if(selectFrag == "Blueberry Sugar Pancakes"){
          filterd = data.filter( ele=>{
@@ -234,6 +261,7 @@ let sefrag = ()=>{
               }
               
         })
+        append(filterd);
     }
     else if(selectFrag == "Butterfly"){
      
@@ -243,13 +271,37 @@ let sefrag = ()=>{
          }
          
      })
+     append(filterd);
  }
 
- append(filterd);
+
 
 
 }
 
+let sesort = ()=>{
+    let selectso = document.getElementById("sort").value;
+    let filterd;
+    if(selectso == "sortout"){
+        append(data);
+        console.log(data)
+
+    }
+    else if(selectso == "l2h"){
+       filterd = data.sort((a,b)=>{
+         return a.price-b.price;
+       })
+       append(filterd)
+    }
+    else if(selectso == "h2l"){
+     
+     filterd = data.sort((a,b)=>{
+         return b.price-a.price;
+     }) 
+     append(filterd) 
+     
+ }
+}
 
 
 
@@ -258,8 +310,8 @@ selectfrag.addEventListener("change",sefrag);
 
 
 
-// let selectso = document.getElementById("sort");
-// selectso.addEventListener("change",sesort);
+let selectso = document.getElementById("sort");
+selectso.addEventListener("change",sesort);
 
 let selectFi = document.getElementById("type")
 selectFi.addEventListener("change", changefi)

@@ -151,7 +151,7 @@
     border: solid red; 
     width: 1000px;
     justify-content: space-between;
-    display: none;
+    /* display: none; */
 }
 
 .hoverDiv:hover+a{

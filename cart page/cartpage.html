@@ -158,126 +158,215 @@
         </div>
       </div>
 
-      <div>
+      <div id="checkoutcol">
         <p>ITEMS IN SHOPPING BAG</p>
-        <button>PayPal</button>
-        <button>CHECKOUT</button>
+        <div>
+          <button
+            id="paypalbutton"
+            style="background: rgb(230, 196, 45); height: 50px; width: 200px"
+          >
+            <input
+              type="image"
+              src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_150x38.png"
+              height="25px"
+              width="100px"
+            />
+          </button>
+          <button class="checkout_btn">CHECKOUT</button>
+        </div>
       </div>
       <p id="blueline">
         Need it ASAP? Choose Pick Up In Store, and we'll typically have it ready
         for pickup within 4 hours.
       </p>
-      <p class="centertext">YOUR SHIPPING AND PICKUP CHOICES</p>
+      <p class="centertext" id="grey_bgc_line">
+        YOUR SHIPPING AND PICKUP CHOICES
+      </p>
 
-      <div>
+      <div id="shippingbox">
         <div>
-          <p>2 Items added for Shipping</p>
+          <p class="blueline">2 Items added for Shipping</p>
         </div>
         <div>
-          <p><span>NEW!</span> PICK UP IN STORE</p>
+          <p class="blueline">
+            <span style="color: rgb(194, 30, 142)">NEW!</span> PICK UP IN STORE
+          </p>
           <p>Get it ASAP! It's easy, fast & free.</p>
           <a href="">Set Store</a>
         </div>
+      </div>
+      <hr />
+      <hr />
+      <table>
+        <thead>
+          <tr>
+            <td><h1>ITEM</h1></td>
+            <td><h1>PRICE</h1></td>
+            <td><h1>QTY</h1></td>
+            <td><h1>TOTAL PRICE</h1></td>
+          </tr>
+        </thead>
+      </table>
+      <!-- this is area for append data in cart section -->
 
-        <div class="itemdiv">
-          <div>
-            <img
-              src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw4138a78d/hires/026527339.jpg?sh=471&yocs=o_s_"
-              height="70%"
-              width="150px"
-              alt=""
-            />
-            <h5>Pumpkin Apple</h5>
-            <p>Gentle Foaming Handwash</p>
-            <p>$7.50</p>
-            <p>mix & match:5/$25</p>
+      <!--      -->
+
+      <div id="promo_checkout">
+        <div id="promobox">
+          <h2>PROMOTION CODE</h2>
+          <p>Only one code can be applied per Order</p>
+          <input type="text" /><button>APPLY</button>
+        </div>
+        <div id="all_total_values">
+          <div class="chekoutcolmdiv">
+            <span> MERCHANDISE SUBTOTAL </span>
+            <span id="total_cart_value">00</span>
           </div>
-          <div>
-            <img
-              src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw13eec387/hires/026513342.jpg?sh=471&yocs=o_s_"
-              height="70%"
-              width="100%"
-              alt=""
-            />
-            <h5>Wild Honeysuckle</h5>
-            <p>Gentle & Clean Foaming Hand Soap</p>
-            <p>$7.50</p>
-            <p>mix & match:5/$25</p>
+          <br />
+          <div class="chekoutcolmdiv">
+            <span>ESTIMATED SHIPPING & HANDLING - Standard</span>
+            <span id="shipping_value">00</span>
           </div>
-          <div>
-            <img
-              src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwccc98a36/hires/026526739.jpg?sh=471&yocs=o_s_"
-              height="70%"
-              width="150px"
-              alt=""
-            />
-            <h5>Pumpkin Cupcake</h5>
-            <p>Gentle Foaming Hand Soap</p>
-            <p>$7.50</p>
-            <p>Mix & Match: 2/$25</p>
+          <br />
+
+          <div class="chekoutcolmdiv">
+            <span>SALES TAX</span>
+            <span id="cart_tax">00</span>
           </div>
-          <div>
-            <img
-              src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwa47ff7f1/hires/026522836.jpg?sh=471&yocs=o_s_"
-              height="70%"
-              width="150px"
-              alt=""
-            />
-            <h5>Vanilla Coconut</h5>
-            <p>Gentle & Clean Foaming Handsoap</p>
-            <p>$7.50</p>
-            <p>Mix & Match: 5/$25</p>
+          <br />
+          <p>
+            tax is estimated and will be calculated when your order is
+            processed.
+          </p>
+          <hr />
+          <div class="chekoutcolmdiv">
+            <span>ORDER TOTAL(USD)</span>
+            <span id="total_cart_price">00</span>
           </div>
-          <div>
-            <img
-              src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw714ea985/hires/026526749.jpg?sh=471&yocs=o_s_"
-              height="70%"
-              width="150px"
-              alt=""
-            />
-            <h5>Cozy Vanilla Cream</h5>
-            <p>Gentle Foaming Hand Soap</p>
-            <p>$7.50</p>
-            <p>Mix & Match: 5/$25</p>
+          <br /><br />
+
+          <div id="button_checkout">
+            <button
+              class="paypalbutton"
+              style="background: rgb(230, 196, 45); height: 50px; width: 200px"
+            >
+              <input
+                type="image"
+                src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_150x38.png"
+                height="25px"
+                width="100px"
+              />
+            </button>
+            <button class="checkout_btn">CHECKOUT</button>
           </div>
-          <div>
-            <img
-              src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw47d07646/hires/026502777.jpg?sh=471&yocs=o_s_"
-              height="70%"
-              width="150px"
-              alt=""
-            />
-            <h5>White Tea & Sage</h5>
-            <p>Gentle & Clean Foaming Hand Soap</p>
-            <p></p>
-            <p>Gentle Foaming Hand Soap</p>
-            <p>$7.50</p>
-            <p>Mix & Match: 5/$25</p>
-          </div>
-          <div>
-            <img
-              src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw0e1e04f4/hires/026483730.jpg?sh=471&yocs=o_s_"
-              height="70%"
-              width="150px"
-              alt=""
-            />
-            <h5>Sweet Orange Blossom</h5>
-            <p>Gentle Foaming Hand Soap</p>
-            <p>$8.50</p>
-            <p>Mix & Match: 5/$25</p>
-          </div>
-          <div>
-            <img
-              src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8e36631a/hires/026410944.jpg?sh=471&yocs=o_s_"
-              height="70%"
-              width="150px"
-              alt=""
-            />
-            <h5>Eucalyptus Spearmint</h5>
-            <p>Gentle Foaming Hand Soap</p>
-            <p>$7.50</p>
-            <p>Mix & Match: 5/$25</p>
-          </div>
+
+          <p>International Shoppers</p>
+          <p>All prices are displayed and processed in US dollars (USD).</p>
+        </div>
+      </div>
+      <br /><br />
+      <hr />
+      <hr />
+      <br /><br />
+
+      <div class="itemdiv">
+        <div>
+          <img
+            src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw4138a78d/hires/026527339.jpg?sh=471&yocs=o_s_"
+            height="70%"
+            width="150px"
+            alt=""
+          />
+          <h5>Pumpkin Apple</h5>
+          <p>Gentle Foaming Handwash</p>
+          <p>$7.50</p>
+          <p>mix & match:5/$25</p>
+        </div>
+        <div>
+          <img
+            src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw13eec387/hires/026513342.jpg?sh=471&yocs=o_s_"
+            height="70%"
+            width="100%"
+            alt=""
+          />
+          <h5>Wild Honeysuckle</h5>
+          <p>Gentle & Clean Foaming Hand Soap</p>
+          <p>$7.50</p>
+          <p>mix & match:5/$25</p>
+        </div>
+        <div>
+          <img
+            src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwccc98a36/hires/026526739.jpg?sh=471&yocs=o_s_"
+            height="70%"
+            width="150px"
+            alt=""
+          />
+          <h5>Pumpkin Cupcake</h5>
+          <p>Gentle Foaming Hand Soap</p>
+          <p>$7.50</p>
+          <p>Mix & Match: 2/$25</p>
+        </div>
+        <div>
+          <img
+            src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwa47ff7f1/hires/026522836.jpg?sh=471&yocs=o_s_"
+            height="70%"
+            width="150px"
+            alt=""
+          />
+          <h5>Vanilla Coconut</h5>
+          <p>Gentle & Clean Foaming Handsoap</p>
+          <p>$7.50</p>
+          <p>Mix & Match: 5/$25</p>
+        </div>
+        <div>
+          <img
+            src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw714ea985/hires/026526749.jpg?sh=471&yocs=o_s_"
+            height="70%"
+            width="150px"
+            alt=""
+          />
+          <h5>Cozy Vanilla Cream</h5>
+          <p>Gentle Foaming Hand Soap</p>
+          <p>$7.50</p>
+          <p>Mix & Match: 5/$25</p>
+        </div>
+        <div>
+          <img
+            src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw47d07646/hires/026502777.jpg?sh=471&yocs=o_s_"
+            height="70%"
+            width="150px"
+            alt=""
+          />
+          <h5>White Tea & Sage</h5>
+          <p>Gentle & Clean Foaming Hand Soap</p>
+          <p></p>
+          <p>Gentle Foaming Hand Soap</p>
+          <p>$7.50</p>
+          <p>Mix & Match: 5/$25</p>
+        </div>
+        <div>
+          <img
+            src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw0e1e04f4/hires/026483730.jpg?sh=471&yocs=o_s_"
+            height="70%"
+            width="150px"
+            alt=""
+          />
+          <h5>Sweet Orange Blossom</h5>
+          <p>Gentle Foaming Hand Soap</p>
+          <p>$8.50</p>
+          <p>Mix & Match: 5/$25</p>
+        </div>
+        <div>
+          <img
+            src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8e36631a/hires/026410944.jpg?sh=471&yocs=o_s_"
+            height="70%"
+            width="150px"
+            alt=""
+          />
+          <h5>Eucalyptus Spearmint</h5>
+          <p>Gentle Foaming Hand Soap</p>
+          <p>$7.50</p>
+          <p>Mix & Match: 5/$25</p>
         </div>
       </div>
     </div>
