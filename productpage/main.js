@@ -51,7 +51,7 @@ let cartData = JSON.parse(localStorage.getItem("cart"))||[];
 
 let addCart = (ele)=>{
       localStorage.setItem("cart",JSON.stringify(ele));
-      window.location.href = "cart.html"
+      window.location.href = "cartpage\cartpage.html"
 }
 
 
