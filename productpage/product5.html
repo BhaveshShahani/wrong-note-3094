@@ -6,6 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="bodycare.css">
+    <style>
+    #container {
+    width: 80%;
+    margin-left: 20%;
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    grid-template-rows: repeat(4, 400px);
+    row-gap: 100px;
+    margin-top: 2%;
+}
+
+#container>div>img {
+    width: 60%;
+    height: 70%;
+    display: block;
+    margin: auto;
+
+}
+
+#container>div {
+    text-align: center;
+}
+
+#container>div>button {
+    margin-top: 2%;
+    width: 80%;
+    height: 35px;
+    border-radius: 8px;
+    background-color: black;
+    color: white
+}
+
+#container>div>p {
+    margin-top: 1%;
+}
+
+#container>div>button:hover {
+    background-color: gray;
+    color: black;
+    cursor: pointer;
+}
+#footer{
+    margin-top: 7%;
+}
+    </style>
 </head>
 <body>
     <div id="navbar">
@@ -48,6 +93,9 @@
     </div>
     <div id="container">
 
+    </div>
+    <div id="footer">
+          
     </div>
 </body>
 </html>

@@ -6,17 +6,19 @@
 
  
     
-    margin-left: 25%;
+    margin-left: 10%;
    
     
     justify-content: space-around;
     align-items: center;
 gap: 30px;
+
+margin-bottom: 50px;
 }
 
 #container>div>img{
     width: 60%;
-    height: 350px;
+    height: 200px;
     display: block;
     margin: auto;
   
@@ -47,7 +49,7 @@ color:white
     display: flex;
     margin-top: 2%;
     width: 75%;
-    margin-left: 25%;
+    margin-left: 10%;
 }
 #filter>select{
     margin-left: 4%;

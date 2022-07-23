@@ -1,0 +1,58 @@
+
+      #masterDiv {
+        width: 80%;
+        margin: auto;
+      }
+      #maindiv {
+        display: flex;
+
+        /* border: 12px solid blue; */
+        /* flex-direction: row; */
+        /* background-color: yellow;  */
+      }
+
+      #formdiv {
+        padding: 20px;
+        line-height: 40px;
+      }
+      .inputtag {
+        height: 40px;
+        width: 50%;
+        /* background-color: black; */
+      }
+      #appendingdiv {
+        /* height: 100
+        px; */
+        width: 500px;
+        /* border: 2px solid red; */
+        margin-left: 200px;
+      }
+      #all_total_values {
+        height: 350px;
+        /* width: 50%; */
+        background-color: rgba(235, 230, 230, 0.774);
+        padding: 10px;
+      }
+      .chekoutcolmdiv {
+        display: flex;
+        justify-content: space-between;
+      }
+      #cartappend {
+        display: flex;
+      }
+      #submit_btn {
+        margin: 10px;
+        height: 30px;
+        width: 100px;
+        color: white;
+        background-color: black;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      #submit_btn:hover {
+        color: black;
+        background-color: white;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+      }
