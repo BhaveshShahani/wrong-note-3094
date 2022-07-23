@@ -198,18 +198,23 @@
       <hr />
       <hr />
       <table>
-        <thead>
-          <tr>
-            <td><h1>ITEM</h1></td>
-            <td><h1>PRICE</h1></td>
-            <td><h1>QTY</h1></td>
-            <td><h1>TOTAL PRICE</h1></td>
-          </tr>
-        </thead>
+        <tr>
+          <span style="padding-left: 20px">ITEM</span>
+
+          <span style="padding-left: 400px">PRICE</span>
+          <span style="padding-left: 200px">QTY</span>
+          <span style="padding-left: 200px">TOTAL PRICE</span>
+        </tr>
+
+        <tbody id="tbody"></tbody>
       </table>
       <!-- this is area for append data in cart section -->
 
       <!--      -->
+      <hr />
+      <button id="refreshbutton">Update Bag</button>
+      <br /><br />
+      <hr />
 
       <div id="promo_checkout">
         <div id="promobox">
@@ -372,3 +377,4 @@
     </div>
   </body>
 </html>
+<script src="cartpage.js" type="module"></script>
