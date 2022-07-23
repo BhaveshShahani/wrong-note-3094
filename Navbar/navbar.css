@@ -128,6 +128,24 @@
 #menu ul li:hover > ul{
     display: block;
 }
+#g{
+    /* border: solid red; */
+    width: 40px;
+}
+#g>img{
+    /* border: solid; */
+    width: 80%;
+    height: 100%;
+}
+#h{
+    /* border: solid red; */
+    width: 40px;
+}
+#h>img{
+    /* border: solid; */
+    width: 80%;
+    height: 100%;
+}
 /* #navigation{
     display: flex;
     justify-content: space-around;
