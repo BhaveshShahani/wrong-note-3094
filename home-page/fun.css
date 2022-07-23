@@ -1,0 +1,57 @@
+#container{
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+ 
+
+ 
+    
+    margin-left: 25%;
+   
+    
+    justify-content: space-around;
+    align-items: center;
+gap: 30px;
+}
+
+#container>div>img{
+    width: 60%;
+    height: 350px;
+    display: block;
+    margin: auto;
+  
+}
+
+
+#container>div{
+    text-align: center;
+}
+#container>div>button{
+    margin-top: 2%;
+width :90%;
+height:35px;
+border-radius: 8px;
+ background-color: black;
+color:white
+}
+#container>div>p{
+    margin-top: 1%;
+}
+#container>div>button:hover{
+    background-color: gray;
+    color: black;
+    cursor: pointer;
+}
+
+#filter{
+    display: flex;
+    margin-top: 2%;
+    width: 75%;
+    margin-left: 25%;
+}
+#filter>select{
+    margin-left: 4%;
+    width: 150px;
+    height:25px ;
+ 
+}

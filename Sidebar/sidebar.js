@@ -45,6 +45,5 @@ let sidebar= () =>{
         <li class="content"><a href="">Retired Fragances</a></li>
         <li class="content"><a href="">Travel Size</a></li>
     </ul>`
-
 }
 export default sidebar;
