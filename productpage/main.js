@@ -44,7 +44,7 @@ let append = (data)=>{
 
 let checkout = (ele)=>{
       localStorage.setItem("checkout",JSON.stringify(ele));
-      window.location.href ="checkout.html";
+      window.location.href ="../cartpage/checkoutpage.html";
 }
 
 
@@ -53,12 +53,12 @@ let dataarr= JSON.parse(localStorage.getItem("cart"))|| []
 let addCart = (ele)=>{
      
       localStorage.setItem("cart",JSON.stringify(ele));
-      window.location.href = "cartpage\cartpage.html"
+      window.location.href = "../cartpage/cartpage.html"
 
       dataarr.push(ele)
       localStorage.setItem("cart",JSON.stringify(dataarr));
       console.log(dataarr);
-      window.location.href = "./cartpage/cartpage.html"
+      window.location.href = "../cartpage/cartpage.html"
 }
 
 
