@@ -17,8 +17,17 @@ text-align: center;
   display: flex;
   text-align: center;
   justify-content: center;
+
  
 }
+
+.box2-button{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    width: 100px;
+}
+
 .box2-slide-show{
     display: flex;
     gap: 10px;
@@ -39,8 +48,11 @@ text-align: center;
 
 .title-content{
     background-color: #fff;
-    border-radius: 4px;
-    border: 1px solid #f2f2f2;
+    border-radius: 4px ;
+    border: 1px solid #a84545;
+    height: 150px;
+    width: 150px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .link-image{
@@ -48,19 +60,62 @@ text-align: center;
     padding: -10;
     
 }
+.falselink{
+    color:black;
+}
 
 .graphic-tile-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
-#carousel{
-    border: 1px solid red;
-    width: 500px;
-    scroll-behavior: auto;
-}
 
+
+.carousel-button{
+    background-color: #333;
+    color: #f2f2f2;
+   font-size: 20px;
+
+}
 .grid-content{
     display: grid;
-    grid-template-columns: repeat(6,300px);
+    grid-template-columns: repeat(6,auto);
+}
+.image-class{
+    width: 250px;
 }
 
+.module-upper{
+  margin-left: 700px;
+  margin-top: 20px;
+}
+
+.module-lower{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+}
+.module-lower-image
+{
+    width: 300px;
+}
+.slot{
+    font-size: 1rem;
+
+    line-height: 1.4;
+}
+
+.graphic-tile-container  {
+    margin-top: 30px;
+    margin-left: 80px;
+}
+    
+   
+
+.carousel-container{
+    display: flex;
+  
+}
+.carousel-image{
+    height: 400px
+}
