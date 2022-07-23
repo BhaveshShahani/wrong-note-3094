@@ -203,8 +203,10 @@ price:13.50
 
 import {append} from "./main.js"
 import navbar from "../Navbar/navbar.js"
+import sidebar from "../Sidebar/sidebar.js"
 
 document.getElementById("navbar").innerHTML = navbar();
+document.getElementById("sidebar").innerHTML = sidebar();
 
 let changefi = ()=>{
        let selectFi = document.querySelector("#type").value;

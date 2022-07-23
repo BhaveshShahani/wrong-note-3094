@@ -1,5 +1,7 @@
 // let data = localStorage.getItem("cart")
 // let app = JSON.parse(data);
+import navbar from "../Navbar/navbar.js"
+document.getElementById("navbar").innerHTML= navbar();
 
 let subtotal1 = 0;
 let subtotal2=0;
