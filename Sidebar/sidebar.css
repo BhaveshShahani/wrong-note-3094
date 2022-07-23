@@ -2,6 +2,7 @@
 #sidebar{
     /* border: solid black; */
     width: 20%;
+    border: 1px solid red;
 }
 .head{
     text-decoration: none;

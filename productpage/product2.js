@@ -192,7 +192,9 @@ let data = [
 
 
 import {append} from "./main.js"
-import navbar from "../navbar.html/Navbar/navbar.js"
+import navbar from "../Navbar/navbar.js"
+import foot from "../footer/foot.js"
+document.getElementById("footer").innerHTML = foot()
 
 document.getElementById("navbar").innerHTML = navbar();
 import sidebar from "../Sidebar/sidebar.js"
