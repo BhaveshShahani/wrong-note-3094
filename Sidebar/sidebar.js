@@ -1,7 +1,7 @@
 let sidebar= () =>{
     return `div id="sidebar">
     <ul class="head">
-       <h3>Top Offers</h3> 
+       <h3 id="h3">Top Offers</h3> 
         <li class="content"><a href="">Buy 3, Get 3 Free All Full-Size Body Care</a></li>
         <li class="content"> <a href=""> Buy 3, Get 1 Free Selected Travel, Hand & Lip Care</a></li>
     </ul>
