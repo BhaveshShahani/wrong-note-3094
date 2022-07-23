@@ -192,7 +192,10 @@ let data = [
 
 
 import {append} from "./main.js"
+import navbar from "../navbar.html/Navbar/navbar.js"
 document.getElementById("navbar").innerHTML = navbar();
+import sidebar from "../Sidebar/sidebar.js"
+document.getElementById("sidebar").innerHTML = sidebar();
 
 
 
