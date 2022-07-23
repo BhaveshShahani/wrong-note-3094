@@ -212,7 +212,7 @@ let changefi = ()=>{
         append(data);
 
     }
-    else if(selectFi == "Candle Holder"){
+    else if(selectFi == "Car Fragrance Refill"){
          filterd = data.filter( ele=>{
              if(selectFi === ele.type){
                 return ele
@@ -221,7 +221,7 @@ let changefi = ()=>{
         })
         append(filterd);
     }
-    else if(selectFi == "Single Wick Candle"){
+    else if(selectFi == "Wallflowers Fragrance Plug"){
      
       filterd = data.filter( ele=>{
          if(selectFi === ele.type){
@@ -231,7 +231,7 @@ let changefi = ()=>{
      })
      append(filterd);
  }
- else if(selectFi == "3-wick-candle"){
+ else if(selectFi == "Car Fragrance Holder"){
      
      filterd = data.filter( ele=>{
         if(selectFi === ele.type){
@@ -254,7 +254,7 @@ let sefrag = ()=>{
      append(data);
   console.log(data)
  }
- else if(selectFrag == "Apple Weather"){
+ else if(selectFrag == "Paw & Heart Vent Clip"){
       filterd = data.filter( ele=>{
           if(selectFrag === ele.name){
               return ele
@@ -263,7 +263,7 @@ let sefrag = ()=>{
      })
      append(filterd);
  }
- else if(selectFrag == "Black Tie"){
+ else if(selectFrag == "Oceans"){
   
    filterd = data.filter( ele=>{
       if(selectFrag === ele.name){
@@ -273,7 +273,7 @@ let sefrag = ()=>{
   })
   append(filterd);
 }
-else if(selectFrag == "Graphite"){
+else if(selectFrag == "Vampire Blood"){
   
     filterd = data.filter( ele=>{
        if(selectFrag === ele.name){
