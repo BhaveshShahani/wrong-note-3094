@@ -110,11 +110,6 @@
 }
 #promo{
     /* border: solid; */
-=======
-
-#promo {
-
-
     display: flex;
     justify-content: end;
     align-items: center;
@@ -123,8 +118,7 @@
     gap: 10px;
     background-color: #f2f2f2;
 }
-
-#promo h5 {
+#promo h5{
     text-transform: uppercase;
     font-size: 13px;
     font-family: TrendSansW05-One, Arial, sans-serif;
@@ -132,57 +126,39 @@
     font-weight: bold;
     letter-spacing: 2px;
 }
-
-#promo p {
+#promo p{
     text-decoration-line: underline;
     color: #808080;
     font-family: TrendSansW05-One, Arial, sans-serif;
     font-size: 12px;
 }
-
 #wrap{
     /* border: solid; */
-=======
-
-#wrap {
-
-
     display: flex;
     justify-content: space-around;
     height: 80px;
     align-items: center;
 }
-
-#logo {
+#logo{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 28%;
-    height: 80%;
+    height: 80% ;
     margin-left: 500px;
-
     /* border: solid; */
-
-
-
 }
-
-#section {
+#section{
     display: flex;
-
     /* border: solid; */
-
-
     justify-content: end;
     gap: 10px;
     align-items: center;
     width: 30%;
 }
-
-#search {
+#search{
     width: 70%;
     height: 30px;
-
     /* display: flex;
     background: url(https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw517a8476/images/svg-icons/UI-Search-v2.svg?yocs=o_s_);
     background-position-y:center ;
@@ -191,38 +167,30 @@
     padding-left: 15px;
     background-repeat: no-repeat;
 }
-
-#section img {
+#section img{
     width: 6%;
     padding: 5px;
 }
-
 /* Navigation */
 /* #menu{
     border: solid;
     margin: auto;
 } */
 #menu > ul{
-
-
-#menu>ul {
-
     background-color: transparent;
     width: 85%;
     display: flex;
     margin: auto;
     justify-content: space-around;
 }
-
-#menu ul {
+#menu ul{
     list-style: none;
     position: relative;
     /* margin: 0; */
     padding: 0;
     /* float: left; */
 }
-
-#menu ul a {
+#menu ul a{
     color: rgb(66, 65, 65);
     text-decoration: none;
     font-size: 18px;
@@ -231,23 +199,22 @@
     /* font-weight: bold; */
     display: block;
 }
-
-#menu ul li {
+#menu ul li{
     float: left;
     position: relative;
     margin: 0;
     padding: 0;
-    border-bottom: white;
+    border-bottom: solid transparent;
 }
 /* #menu ul:first-child li:hover{
     border-bottom: solid blue;
 } */
 
-#menu .line:hover {
+#menu .line:hover{
     border-bottom: solid blue;
 }
 
-#menu ul ul {
+#menu ul ul{
     margin: 2px;
     margin-top: 5px;
     position: absolute;
@@ -256,129 +223,21 @@
     left: 0;
     display: none;
 }
-
-#menu ul ul li {
+#menu ul ul li{
     float: none;
     width: 220px;
     border-left: 4px solid transparent;
 }
-
-#menu ul ul li:hover {
+#menu ul ul li:hover{
     border-left: 4px solid blue;
 }
-
-#menu ul ul ul {
-    top: 0;
-    left: 100%;
+#menu ul ul ul{
+     top: 0;
+     left: 100%;
 }
-
-#menu ul li:hover>ul {
+#menu ul li:hover > ul{
     display: block;
 }
-#decoration{
-    width: 100%;
-    border: 1px solid #989898;
-}
-#links{
-    /* border: solid rebeccapurple; */
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-}
-#links div{
-    /* border: solid; */
-    margin-top: 10px;
-}
-#links a{
-    text-decoration: none;
-    color: #989898;
-}
-#submit{
-    background-color: black;
-    color: white;
-}
-#connect{
-    /* border: solid teal; */
-    height: 130px;
-    width: 85%;
-    margin: auto;
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-#social{
-    /* border: solid silver; */
-    height: 40px;
-}
-#social img{
-    height: 100%;
-    border-radius: 50%;
-}
-#logos{
-    /* border: solid; */
-    width: 40%;
-}
-#logos img{
-    display: block;
-    width: 100%;
-    height: 99%;
-}
-#tc{
-    /* border: solid; */
-    height: 100px;
-    width: 100%;
-}
-#tc{
-    background-color: #f5f5f5;
-    width: 100%;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#privacy{
-    /* border: solid; */
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-}
-#privacy>p{
-    border-right: 1px solid #989898;
-    padding-right: 15px;
-}
-#privacy>p:last-child{
-    border-right: 1px solid transparent;
-}
-#rights{
-    width: 25%;
-    margin: auto;
-}
-
-#sidebar{
-    /* border: solid black; */
-    width: 20%;
-    margin-left: 1%;
-}
-.head{
-    text-decoration: none;
-    list-style-type: none;
-}
-#h3{
-    text-transform: uppercase;
-}
-.content>a{
-    display: block;
-    font-size: 18px;
-    /* border: solid black; */
-    margin-top: 13px;
-    width: 90%;
-    text-decoration: none;
-    color: #919191;
-}
-
 #g{
     /* border: solid red; */
     width: 40px;
@@ -446,6 +305,8 @@
     border: solid;
     
  }  */
+
+ 
 
 #footer{
     margin-top: 7%;

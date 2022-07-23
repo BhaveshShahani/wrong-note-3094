@@ -202,10 +202,6 @@ import foot from "../footer/foot.js"
  document.getElementById("footer").innerHTML = foot();
 
 
-document.getElementById("navbar").innerHTML = navbar();
-import sidebar from "../Sidebar/sidebar.js"
-document.getElementById("sidebar").innerHTML = sidebar();
-
 
 
 

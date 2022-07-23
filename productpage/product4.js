@@ -214,10 +214,6 @@ import foot from "../footer/foot.js"
  document.getElementById("footer").innerHTML = foot();
 
 
-
-import sidebar from "../Sidebar/sidebar.js"
-document.getElementById("sidebar").innerHTML = sidebar();
-
 let changefi = ()=>{
     let selectFi = document.querySelector("#type").value;
     console.log(selectFi)
