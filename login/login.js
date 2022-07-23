@@ -1,4 +1,4 @@
-import navbar from "../navbar.html/Navbar/navbar.js"
+import navbar from "../Navbar/navbar.js"
 import foot from "../footer/foot.js"
 
 document.querySelector("#navbar").innerHTML = navbar();
