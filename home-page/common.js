@@ -1,4 +1,5 @@
 let append = (data)=>{
+    
     let cont = document.querySelector("#container");
     cont.innerHTML = "";
     data.forEach(element => {
@@ -43,22 +44,15 @@ let append = (data)=>{
 
 
 let checkout = (ele)=>{
-      localStorage.setItem("checkout",JSON.stringify(ele));
-      window.location.href ="checkout.html";
+    localStorage.setItem("checkout",JSON.stringify(ele));
+    window.location.href ="checkout.html";
 }
 
+let cartData = JSON.parse(localStorage.getItem("cart"))||[];
 
-
-let dataarr= JSON.parse(localStorage.getItem("cart"))|| []
 let addCart = (ele)=>{
-     
-      localStorage.setItem("cart",JSON.stringify(ele));
-      window.location.href = "cartpage\cartpage.html"
-
-      dataarr.push(ele)
-      localStorage.setItem("cart",JSON.stringify(dataarr));
-      console.log(dataarr);
-      window.location.href = "./cartpage/cartpage.html"
+    localStorage.setItem("cart",JSON.stringify(ele));
+    window.location.href = "cart.html"
 }
 
 

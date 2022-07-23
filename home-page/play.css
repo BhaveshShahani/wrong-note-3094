@@ -1,3 +1,51 @@
+#container{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+ 
+
+ 
+    
+    
+   margin-left: 20%;
+    
+    justify-content: space-around;
+    align-items: center;
+gap: 30px;
+}
+
+#container>div>img{
+    width: 60%;
+    height: 250px;
+    display: block;
+    margin: auto;
+  
+}
+
+
+#container>div{
+    text-align: center;
+}
+#container>div>button{
+    margin-top: 2%;
+width :90%;
+height:35px;
+border-radius: 8px;
+ background-color: black;
+color:white
+}
+#container>div>p{
+    margin-top: 1%;
+}
+#container>div>button:hover{
+    background-color: gray;
+    color: black;
+    cursor: pointer;
+}
+
+/*////////////////////*/
+
+
 #promo{
     /* border: solid; */
     display: flex;
@@ -128,6 +176,7 @@
 #menu ul li:hover > ul{
     display: block;
 }
+
 /* #navigation{
     display: flex;
     justify-content: space-around;
@@ -146,13 +195,15 @@
     text-decoration: none;
     color: #808080;
 }
+
 #bodyCare{
     display: flex;
     border: solid red; 
     width: 1000px;
     justify-content: space-between;
-     display: none; 
-}
+    /* display: none; */
+
+
 
 .hoverDiv:hover+a{
     display: flex;
@@ -176,52 +227,34 @@
     flex-direction: column;
     border: solid;
     
- }  */
+} 
 
-#register{
-    width: 70%;
-    height: auto;
-    margin: auto;
-    margin-top: 50px;
+
+/*/////////////////*/
+
+
+#sidebar{
+    /* border: solid black; */
+    width: 20%;
+}
+.head{
+    text-decoration: none;
+    list-style-type: none;
 }
 h3{
-    font-size: 30px;
-    font-weight: 100;
+    text-transform: uppercase;
 }
-#user-data{
-    width: 35%;
-    margin: auto;
-}
-h5{
-    font-size: 18px;
-    font-weight: 200;
-    margin-bottom: 10px;
-}
-input{
-    height: 20px;
-    width: 100%;
-}
-h4{
-    text-align: center;
-    text-decoration: underline;
-}
-#btn{
-    background-color: black;
-    color: white;
-    padding: 5px 35px 5px 35px;
+.content>a{
     display: block;
-    margin: auto;
+    font-size: 18px;
+    /* border: solid black; */
+    margin-top: 13px;
+    width: 90%;
+    text-decoration: none;
+    color: #919191;
 }
-#ques{
-    font-size: 15px;
-    color: grey;
-    text-align: center;
-}
-#call{
-    font-size: 15px;
-    color: grey;
-    text-align: center;
-}
+
+/*///////////////////////*/
 
 
 #decoration{
@@ -265,11 +298,11 @@ h4{
     height: 100%;
     border-radius: 50%;
 }
-#logos{
+#logo{
     /* border: solid; */
     width: 40%;
 }
-#logos img{
+#logo img{
     display: block;
     width: 100%;
     height: 99%;
@@ -304,4 +337,24 @@ h4{
 #rights{
     width: 25%;
     margin: auto;
+}
+
+
+
+/*//////////////////////*/
+
+#slot-container{
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 7%;
+}
+
+#block{
+    margin-top: 50px;
+    margin-left: 25%;
+    margin-bottom: 40px;
+}
+
+#heading{
+    margin-left: 300px;
 }
