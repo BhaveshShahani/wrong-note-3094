@@ -1,3 +1,15 @@
+
+import navbar from "../navbar.html/Navbar/navbar.js"
+document.getElementById("navbar").innerHTML=navbar()
+
+import sidebar from "../Sidebar/sidebar.js"
+document.getElementById("sidebar").innerHTML=sidebar()
+
+
+import footer from "../footer/foot.js"
+document.getElementById("footer").innerHTML=footer()
+
+
 let data =[
     {img:" https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw61169db9/crop/026544280_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" ,
     new:"New Exclusive",
