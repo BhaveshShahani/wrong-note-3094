@@ -93,7 +93,7 @@ color:white
  
 }
 #promo{
-    /* border: solid; */
+ 
     display: flex;
     justify-content: end;
     align-items: center;
@@ -117,7 +117,7 @@ color:white
     font-size: 12px;
 }
 #wrap{
-    /* border: solid; */
+  
     display: flex;
     justify-content: space-around;
     height: 80px;
@@ -130,11 +130,11 @@ color:white
     width: 28%;
     height: 80% ;
     margin-left: 500px;
-    /* border: solid; */
+ 
 }
 #section{
     display: flex;
-    /* border: solid; */
+ 
     justify-content: end;
     gap: 10px;
     align-items: center;
@@ -143,10 +143,7 @@ color:white
 #search{
     width: 70%;
     height: 30px;
-    /* display: flex;
-    background: url(https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw517a8476/images/svg-icons/UI-Search-v2.svg?yocs=o_s_);
-    background-position-y:center ;
-    background-position-x: 5px; */
+  
     padding: 5px;
     padding-left: 15px;
     background-repeat: no-repeat;
@@ -155,11 +152,7 @@ color:white
     width: 6%;
     padding: 5px;
 }
-/* Navigation */
-/* #menu{
-    border: solid;
-    margin: auto;
-} */
+
 #menu > ul{
     background-color: transparent;
     width: 85%;
@@ -170,9 +163,9 @@ color:white
 #menu ul{
     list-style: none;
     position: relative;
-    /* margin: 0; */
+
     padding: 0;
-    /* float: left; */
+
 }
 #menu ul a{
     color: rgb(66, 65, 65);
@@ -180,7 +173,7 @@ color:white
     font-size: 18px;
     line-height: 40px;
     padding: 0px 10px;
-    /* font-weight: bold; */
+
     display: block;
 }
 #menu ul li{
@@ -190,9 +183,7 @@ color:white
     padding: 0;
     border-bottom: solid transparent;
 }
-/* #menu ul:first-child li:hover{
-    border-bottom: solid blue;
-} */
+
 
 #menu .line:hover{
     border-bottom: solid blue;
@@ -222,52 +213,6 @@ color:white
 #menu ul li:hover > ul{
     display: block;
 }
-/* #navigation{
-    display: flex;
-    justify-content: space-around;
-    width: 90%;
-    margin: auto;
+
     
-}
 
-#navigation p{
-    font-family: "Trade Gothic W01 Light", Arial, sans-serif;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #808080;
-}
-#navigation p a{
-    text-decoration: none;
-    color: #808080;
-}
-#bodyCare{
-    display: flex;
-    border: solid red; 
-    width: 1000px;
-    justify-content: space-between;
-     display: none; 
-}
-
-.hoverDiv:hover+a{
-    display: flex;
-    flex-direction: row;
-
-}
-#bodyCare:hover+#bodyCareContent{
-    color: #005699;
-}
-#bodyCareContent{
-    border: solid;
-    color: #494848;
-    font-size: 15px;
-    line-height: 50px;
-    padding-left: 120px;
-    text-transform: uppercase;
-    font-family: "Trade Gothic W01 Bold_2", Arial, sans-serif;
-}
-.offer{
-    display: flex;
-    flex-direction: column;
-    border: solid;
-    
- }  */

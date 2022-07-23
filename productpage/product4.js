@@ -200,6 +200,7 @@ let data = [
 
 
 import {append} from "./main.js"
+document.getElementById("navbar").innerHTML = navbar();
 
 
 let changefi = ()=>{
