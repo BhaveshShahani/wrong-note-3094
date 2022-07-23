@@ -1,3 +1,8 @@
+import navbar from "../navbar.html/Navbar/navbar.js"
+import foot from "../footer/foot.js"
+
+document.querySelector("#navbar").innerHTML = navbar();
+document.getElementById("footer").innerHTML = foot();
 
 let form = document.querySelector("form");
 
@@ -14,12 +19,12 @@ form.addEventListener("submit",function(event){
         alert("Signin Successfull");
         localStorage.setItem("signinData",JSON.stringify(data));
         localStorage.setItem("login",JSON.stringify(true));
-        // window.location.href = ""
+        window.location.href = "../home-page/home.html"
     }
     else{
         alert("Wrong Email or Password");
         localStorage.setItem("login",JSON.stringify(false));
-        // window.location.href = "signup.html";
+        
     }
 })
 
@@ -33,4 +38,13 @@ let checkSignin = (email,password)=>{
     else{
         return false;
     }
+}
+let btn = document.getElementById("signupBtn");
+
+
+btn.addEventListener("click",function(){
+    createAccount();
+})
+function createAccount(){
+    window.location.href = "../signup/signup.html"
 }

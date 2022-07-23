@@ -1,3 +1,8 @@
+import navbar from "../navbar.html/Navbar/navbar.js";
+import foot from "../footer/foot.js";
+
+document.getElementById("navbar").innerHTML = navbar();
+document.getElementById("footer").innerHTML = foot();
 
 let form = document.querySelector("form");
 
@@ -21,11 +26,11 @@ form.addEventListener("submit",function(e){
             userData.push(data);
             console.log(userData);
             localStorage.setItem("userData",JSON.stringify(userData));
-            // window.location.href = "login.html"
+            window.location.href = "../login/login.html"
         }
         else{
             alert("Account Already Exists")
-            
+            window.location.href = "../login/login.html"
         }
     }
     else{
