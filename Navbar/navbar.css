@@ -132,7 +132,16 @@
     /* border: solid red; */
     width: 40px;
 }
-#g img{
+#g>img{
+    /* border: solid; */
+    width: 80%;
+    height: 100%;
+}
+#h{
+    /* border: solid red; */
+    width: 40px;
+}
+#h>img{
     /* border: solid; */
     width: 80%;
     height: 100%;
