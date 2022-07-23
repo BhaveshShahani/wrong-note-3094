@@ -118,6 +118,7 @@ import navbar from "../navbar.html/Navbar/navbar.js"
 document.getElementById("navbar").innerHTML = navbar();
 
 
+
 let changefi = ()=>{
     let selectFi = document.querySelector("#type").value;
     console.log(selectFi)

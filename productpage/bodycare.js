@@ -204,6 +204,8 @@ price:13.50
 import {append} from "./main.js"
 import navbar from "../navbar.html/Navbar/navbar.js"
 
+
+
 document.getElementById("navbar").innerHTML = navbar();
 
 let changefi = ()=>{
