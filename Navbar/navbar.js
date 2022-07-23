@@ -216,7 +216,7 @@ let navbar = ()=>{
    
     <!-- Navigator fields end -->
     <!-- Decoration Line start -->
-    <div style=" border-bottom: solid #8080804b;"></div>
+    <div style=" border-bottom: solid #8080804b; margin-bottom: 50px;"></div>
      <!-- Decoration Line ends -->
 `
 }
