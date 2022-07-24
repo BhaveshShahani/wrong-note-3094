@@ -360,6 +360,14 @@
       border: none;
       font-weight: bold;
     }
+    .checknew{
+      text-decoration: none;
+      color: white;
+    }
+    .checknew:hover{
+    /* background: #000; */
+    color: teal;
+    }
 
     /* add to cart items */
     /* table>div{ */
