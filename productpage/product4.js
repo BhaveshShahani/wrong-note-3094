@@ -201,12 +201,25 @@ let data = [
 
 import {append} from "./main.js"
 import navbar from "../Navbar/navbar.js"
+
 document.getElementById("navbar").innerHTML = navbar();
 import foot from "../footer/foot.js"
 document.getElementById("footer").innerHTML = foot()
 
+
+
 import sidebar from "../Sidebar/sidebar.js"
+
+
+
+
+document.getElementById("navbar").innerHTML = navbar();
 document.getElementById("sidebar").innerHTML = sidebar();
+
+import foot from "../footer/foot.js"
+ document.getElementById("footer").innerHTML = foot();
+
+
 let changefi = ()=>{
     let selectFi = document.querySelector("#type").value;
     console.log(selectFi)

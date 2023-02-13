@@ -4,39 +4,167 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
+    <title>checkoutpage</title>
+    <!-- <style>
       #masterDiv {
         width: 80%;
         margin: auto;
       }
-      /* #formdiv {
-         display: flex;
-        flex-direction: row;
-        background-color: yellow; 
-      } */
-    </style>
+      #maindiv {
+        display: flex;
+
+        /* border: 12px solid blue; */
+        /* flex-direction: row; */
+        /* background-color: yellow;  */
+      }
+
+      #formdiv {
+        padding: 20px;
+        line-height: 40px;
+      }
+      .inputtag {
+        height: 40px;
+        width: 50%;
+        /* background-color: black; */
+      }
+      #appendingdiv {
+        /* height: 100
+        px; */
+        width: 500px;
+        /* border: 2px solid red; */
+        margin-left: 200px;
+      }
+      #all_total_values {
+        height: 350px;
+        /* width: 50%; */
+        background-color: rgba(235, 230, 230, 0.774);
+        padding: 10px;
+      }
+      .chekoutcolmdiv {
+        display: flex;
+        justify-content: space-between;
+      }
+      #cartappend {
+        display: flex;
+      }
+      #submit_btn {
+        margin: 10px;
+        height: 30px;
+        width: 100px;
+        color: white;
+        background-color: black;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      #submit_btn:hover {
+        color: black;
+        background-color: white;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+      } -->
+    <!-- </style> -->
+    <link rel="stylesheet" href="checkoutpage.css" />
   </head>
   <body>
+    <div id="navbar"></div>
     <div id="masterDiv">
-      <div>
+      <div id="maindiv">
         <div id="formdiv">
-          <form action="">
+          <form onsubmit="fun2()">
             <hr />
             <h1>SIGN IN FOR FASTER CHECKOUT</h1>
             <hr />
             <br />
 
-            <label for="email">Email Address</label><br />
-            <input type="email" id="email" /><br />
-            <label for="Password">Password</label><br />
-            <input type="password" id="password" /><br />
-            <a href="">Forgot Password? </a><br />
-            <button>SIGN IN</button>
-            <a href="">Privacy Policy </a>
+            <label for="fname">First Name</label><br />
+            <input type="text" id="fname" class="inputtag" /><br />
+            <label for="Lname">Last Name</label><br />
+            <input type="text" id="lname" class="inputtag" /><br />
+            <label>Address 1</label><br />
+            <input type="text" id="Address1" class="inputtag" /><br />
+            <label>Address 2</label><br />
+            <input type="text" id="Address2" class="inputtag" /><br />
+
+            <label for="Country">Country</label><br />
+            <select name="country" id="country">
+              <option value="us">United States</option>
+              <option value="canada">Canada</option></select
+            ><br />
+            <label for="city">City</label><br />
+            <input type="text" id="city" class="inputtag" /><br />
+
+            <label for="zipcode">ZIP Code</label><br />
+            <input type="text" id="zipcode" class="inputtag" /><br />
+
+            <label for="phone">Phone</label><br />
+            <input type="number" id="phone" class="inputtag" /><br />
+
+            <input type="checkbox" />
+            <span> Use Address for Billing </span>
+            <p>Are you shipping a gift?</p>
+            <input type="checkbox" /><span>Yes</span>
+            <input type="checkbox" /><span>No</span>
+
+            <h3>SHIPPING METHOD</h3>
+
+            <input type="checkbox" /><span>Standard (3-7 business days.)</span>
+            <span>$ 6.99</span>
+            <p>Estimated delivery Thurs Jul 28- Wed Aug 03</p>
+
+            <input type="checkbox" /><span>Expedited (2 business days.)</span>
+            <span>$ 15.99</span>
+            <p>Estimated delivery Wed Jul 27</p>
+
+            <input type="checkbox" /><span>Overnight (1 business day)</span>
+            <span>$ 20.99</span>
+            <p>Estimated delivery Thues Jul 26</p>
+
+            <input id="submit_btn" type="submit" />
           </form>
+        </div>
+
+        <div id="appendingdiv">
+          <h1>YOUR ORDER</h1>
+
+          <table>
+            <tbody id="tbody"></tbody>
+          </table>
+
+          <div id="all_total_values">
+            <div class="chekoutcolmdiv">
+              <span> MERCHANDISE SUBTOTAL </span>
+              <span id="total_cart_value">00</span>
+            </div>
+            <br />
+            <div class="chekoutcolmdiv">
+              <span>ESTIMATED SHIPPING & HANDLING - Standard</span>
+              <span id="shipping_value">00</span>
+            </div>
+            <br />
+
+            <div class="chekoutcolmdiv">
+              <span>SALES TAX</span>
+              <span id="cart_tax">00</span>
+            </div>
+            <br />
+            <p>
+              tax is estimated and will be calculated when your order is
+              processed.
+            </p>
+            <hr />
+            <div class="chekoutcolmdiv">
+              <span>ORDER TOTAL(USD)</span>
+              <span id="total_cart_price">00</span>
+            </div>
+            <br /><br />
+
+            <p>International Shoppers</p>
+            <p>All prices are displayed and processed in US dollars (USD).</p>
+          </div>
         </div>
       </div>
     </div>
   </body>
 </html>
+<script src="checkoutpage.js" type="module"></script>

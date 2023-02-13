@@ -1,10 +1,21 @@
 // let data = localStorage.getItem("cart")
 // let app = JSON.parse(data);
+import navbar from "../Navbar/navbar.js"
+document.getElementById("navbar").innerHTML= navbar();
 
 let subtotal1 = 0;
 let subtotal2=0;
 
 let arrFromLS = JSON.parse(localStorage.getItem('cart'))||[];
+
+// console.log("");
+// alert("js working")
+ 
+// function checkoutnavi(e){
+//     event.preventDefault();
+//     alert("hello")
+//         // window.location.href = "cartpage\checkoutpage.html"
+// }
 
 
 displaycart(arrFromLS);

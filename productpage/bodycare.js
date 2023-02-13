@@ -221,12 +221,19 @@ import { append } from "./main.js"
 
 
 import navbar from "../Navbar/navbar.js"
-import foot from "../footer/foot.js"
-document.getElementById("footer").innerHTML = foot()
+
+
+import sidebar from "../Sidebar/sidebar.js"
 
 document.getElementById("navbar").innerHTML = navbar();
-import sidebar from "../Sidebar/sidebar.js"
 document.getElementById("sidebar").innerHTML = sidebar();
+
+import foot from "../footer/foot.js"
+ document.getElementById("footer").innerHTML = foot();
+
+// document.getElementById("navbar").innerHTML = navbar();
+// import sidebar from "../Sidebar/sidebar.js"
+// document.getElementById("sidebar").innerHTML = sidebar();
 
 let changefi = () => {
     let selectFi = document.querySelector("#type").value;
@@ -256,6 +263,7 @@ let changefi = () => {
         append(filterd);
     }
     else if (selectFi == "Body Spray") {
+
 
         filterd = data.filter(ele => {
             if (selectFi === ele.type) {
