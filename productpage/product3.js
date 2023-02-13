@@ -197,6 +197,8 @@ import navbar from "../Navbar/navbar.js"
 import sidebar from "../Sidebar/sidebar.js"
 document.getElementById("navbar").innerHTML = navbar();
 document.getElementById("sidebar").innerHTML = sidebar();
+import foot from "../footer/foot.js"
+document.getElementById("footer").innerHTML = foot()
 
 import foot from "../footer/foot.js"
  document.getElementById("footer").innerHTML = foot();
@@ -214,7 +216,11 @@ let changefi = ()=>{
         append(data);
 
     }
+
+    else if(selectFi == "Wallflowers Fragrance Plug"){
+
     else if(selectFi == "Car Fragrance Refill"){
+
          filterd = data.filter( ele=>{
              if(selectFi === ele.type){
                 return ele
@@ -223,7 +229,11 @@ let changefi = ()=>{
         })
         append(filterd);
     }
+
+    else if(selectFi == "Concentrated Room Spray"){
+
     else if(selectFi == "Wallflowers Fragrance Plug"){
+
      
       filterd = data.filter( ele=>{
          if(selectFi === ele.type){
@@ -265,7 +275,11 @@ let sefrag = ()=>{
      })
      append(filterd);
  }
+
+ else if(selectFrag == "Sweater Weather"){
+
  else if(selectFrag == "Oceans"){
+
   
    filterd = data.filter( ele=>{
       if(selectFrag === ele.name){
